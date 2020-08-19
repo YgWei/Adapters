@@ -1,0 +1,10 @@
+version: "3"
+services:
+  monitor:
+    image: sncustom:v1
+    ports:
+      - "8080:8080"
+    container_name: sncustom
+    volumes:
+      - .env:/home/node/app/.env
+      - ./logs:/home/node/app/logs
